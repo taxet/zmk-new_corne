@@ -109,6 +109,30 @@
             layers = <0>;
         };
 
+        zx7 {
+            bindings = <&kp N7>;
+            key-positions = <29 30>;
+            layers = <0>;
+        };
+
+        xc8 {
+            bindings = <&kp N8>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        cv9 {
+            bindings = <&kp N9>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        jk0 {
+            bindings = <&kp N0>;
+            key-positions = <23 24>;
+            layers = <0>;
+        };
+
         io {
             bindings = <&kp MINUS>;
             key-positions = <9 10>;
@@ -170,9 +194,7 @@
                                  &kp LGUI  &kp SPACE  &kp LCTRL                                                &to 1  &kp ENTER  &kp RALT
             >;
 
-            // sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-
-            sensor-bindings = <&inc_dec_kp N2 N1>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
@@ -190,10 +212,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT    &kp HASH  &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &none   &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR   &kp PIPE
-&trans     &none     &none     &kp UP    &none      &kp CARET            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans    &trans     &trans    &kp COLON  &kp DQT
-&trans     &none     &kp LEFT  &kp DOWN  &kp RIGHT  &none      &trans                    &mmv MOVE_DOWN                   &trans  &trans    &kp LT     &kp GT    &kp QMARK  &trans
-                               &trans    &trans     &trans                                                                &trans  &kp DEL   &trans
+&kp TILDE  &kp EXCL  &kp AT    &kp HASH  &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &none    &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR   &kp PIPE
+&trans     &none     &none     &kp UP    &none      &kp CARET            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none    &none     &none      &none     &kp COLON  &kp DQT
+&trans     &none     &kp LEFT  &kp DOWN  &kp RIGHT  &none      &trans                    &mmv MOVE_DOWN                   &none    &none     &kp LT     &kp GT    &kp QMARK  &trans
+                               &trans    &trans     &trans                                                                &kp ESC  &kp DEL   &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
